@@ -1,0 +1,16 @@
+#depot {
+    border-radius: 20px;
+    font-size: 14px;
+    height: 30px;
+    margin-top: auto;
+    padding-bottom: 33px;
+}
+
+#logos {
+    color: #8bd5ef;
+    font-weight: bold;
+}
+
+.default-text {
+    color: #bbbaba
+}

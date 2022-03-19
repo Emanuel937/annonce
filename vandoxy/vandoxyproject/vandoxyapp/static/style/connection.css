@@ -1,0 +1,38 @@
+body {
+    background-color: #22222c
+}
+
+form {
+    width: 340px;
+    margin: auto;
+    margin-top: 10vh
+}
+
+span {
+    color: #555560;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 20px 0 0;
+    text-align: center;
+}
+
+button.btn.fb {
+    background-color: #4267b2;
+    font-weight: bold;
+}
+
+button.btn.google {
+    background-color: #4285f4;
+}
+
+button.e-mail {
+    background-color: lightgray;
+}
+
+#second_form {
+    display: none
+}
+
+form.button {
+    width: 400px
+}

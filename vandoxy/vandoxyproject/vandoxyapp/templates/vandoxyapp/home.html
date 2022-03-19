@@ -1,0 +1,132 @@
+{% extends './base.html' %} {% load static %} {% block css_and_javascript %} {% endblock %} {% block main %}
+<!-- css -->
+{% block css %}
+<link rel="stylesheet" href="{% static '/style/home.css' %}">
+<!-- end css -->
+{% endblock %}
+
+<div id="bar_container">
+    <div class="text-center bar">
+        <h1 class="h2"> Vendez votre produit et services en tout securité, <br>et avec une video pour bien montrer à <br> votre clients</h1>
+    </div>
+    <article id="search">
+        <p class="text-gray">Pro <input type="radio" name="status"> Amateur: <input type="radio" name="status"></p>
+        <div class="row">
+            <div class="col-md-4">
+                <input type="search" placeholder="quoi">
+            </div>
+            <div class="col-md-4">
+                <select>
+                    <option> outro</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <select>
+                    <option> paris </option>
+                </select>
+            </div>
+        </div>
+        <p class="bg-primary" id="start_search">search</p>
+    </article>
+</div>
+<div class="description">
+    <section class="row">
+        <section class="col-md-4 text-center">
+            <img src="{% static 'img/play_site_annonce_avec_video_vendoxy.png' %}" alt="verifiez d'abord le stat du produit, chez vendoxy, site d'annonce">
+            <p>Verifiez le stat tout en regardant la video, une fois sastifé par le stat du produit, faites votre commande</p>
+        </section>
+        <section class="col-md-4 text-center">
+            <img src="{% static 'img/vandoxy_chat.png' %}" alt="verifiez d'abord le stat du produit, chez vendoxy, site d'annonce">
+            <p> Échangez par chat sur le site jusqu’à la livraison en toute sécurité </p>
+        </section>
+        <section class="col-md-4 text-center">
+            <img src="{% static 'img/validate_site_annonce_avec_video_vendoxy.png' %}" alt="une fois que vous avez réçu la commande et que vous validé que vous avez reçu, le vendeur reçoit la commande">
+            <p> Le vendeur n’est payé que lorsque vous validez la livraison </p>
+        </section>
+    </section>
+</div>
+<!-- produits -->
+<div class="container">
+    <h2 class=" mt-4 mb-4 small text-primary"> Les dernier articles:</h2>
+    <div class="lasted">
+        <div>
+            <img src="{% static 'img/index.jpg'%}">
+            <h3 class="text-gray">Produit name</h3>
+            <p class="text-primary small"> <strong> Neuf</strong></p>
+            <p class="prix "><span class="bg-prix p-1 rounded-3 text-white">200€</span> <span><img title="regarder la video " class="info" src="{% static '/img/play_annonce_video.png' %}" alt="lire plus sur cette article"></span> <span><img title="lire plus sur cet article " class="info" src="{% static '/img/info.png' %}" alt="lire plus sur cette article"></span></p>
+        </div>
+        <div>
+            <img src="{% static 'img/index.jpg'%}">
+            <h3 class="text-gray">Produit name</h3>
+            <p class="text-primary small"> <strong> Neuf</strong></p>
+            <p class="prix "><span class="bg-prix p-1 rounded-3 text-white">200€</span> <span><img title="regarder la video " class="info" src="{% static '/img/play_annonce_video.png' %}" alt="lire plus sur cette article"></span> <span><img title="lire plus sur cet article " class="info" src="{% static '/img/info.png' %}" alt="lire plus sur cette article"></span></p>
+        </div>
+        <div>
+            <img src="{% static 'img/index.jpg'%}">
+            <h3 class="text-gray">Produit name</h3>
+            <p class="text-primary small"> <strong> Neuf</strong></p>
+            <p class="prix "><span class="bg-prix p-1 rounded-3 text-white">200€</span> <span><img title="regarder la video " class="info" src="{% static '/img/play_annonce_video.png' %}" alt="lire plus sur cette article"></span> <span><img title="lire plus sur cet article " class="info" src="{% static '/img/info.png' %}" alt="lire plus sur cette article"></span></p>
+        </div>
+        <div>
+            <img src="{% static 'img/iphone.jpg' %}">
+            <h3 class="text-gray">Produit name</h3>
+            <p class="text-primary small"> <strong> Neuf</strong></p>
+            <p class="prix "><span class="bg-prix p-1 rounded-3 text-white">200€</span> <span><img title="regarder la video " class="info" src="{% static '/img/play_annonce_video.png' %}" alt="lire plus sur cette article"></span> <span><img title="lire plus sur cet article " class="info" src="{% static '/img/info.png' %}" alt="lire plus sur cette article"></span></p>
+        </div>
+    </div>
+</div>
+<!-- france -->
+<div>
+    <div class="france">
+        <h4 class="text-center mt-5 text-white"></h4>
+    </div>
+</div>
+<!--Forum-->
+<div class="row mt-5">
+    <div class="col-md-8">
+        <article class="avantages">
+            <section>
+                <img src="{% static '/img/vant.jpg' %}">
+            </section>
+            <h4>Quels avantages vous offre Vandoxy ?</h4>
+        </article>
+        <section class="row informations mt-4">
+            <p class="col-md-4"><img src="{% static '/img/images.jpg' %}"></p>
+            <p class="col-md-3 small text"><strong>Emanuel Abizimi</strong></p>
+            <p class="col-md-5 date"> data</p>
+        </section>
+        <section class="informations">
+            <h4 class="text-primary"> Quels avantages vous offre Vandoxy ?</h4>
+            <p class="default-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae risus tincidunt, ornare mauris in, placerat mauris. Aenean eu turpis non erat feugiat porta ut id ante. Nam sit amet iaculis neque, nec pharetra magna. Quisque vel magna feugiat, lobortis
+                erat quis, euismod nisl.
+            </p>
+            <hr>
+            <p class="text-primary small"> Lire plus</p>
+        </section>
+    </div>
+    <div class="col-md-4">
+        <h4>Depuis le forum </h4>
+        <p><i class="fas fa-grip-lines text-primary"></i></p>
+        {% for x in "bom" %}
+        <div class="row" id="forum">
+            <div class="col-md-3">
+                <img src="{% static 'img/index.jpg'%}" class="forum_img">
+            </div>
+            <div class="col-md-3">
+                <h5 class="text-primary small"> <i class="far fa-clock"></i> June 23, 2022</h5>
+                <h5 class="small text-gray"> Title of artible</h5>
+                <hr>
+            </div>
+            <div class="col-md-4 text-white">
+                <h1 class="h6">Site D'annonce, vandoxy</h1>
+            </div>
+        </div>
+        {% endfor %}
+        <div class="text-center">
+            <button class="button bg-primary text-white"> Forum</button>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

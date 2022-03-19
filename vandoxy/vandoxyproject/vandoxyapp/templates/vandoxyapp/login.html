@@ -1,0 +1,47 @@
+{% extends './base.html' %} {% load static %} {% block css %}
+<link rel="stylesheet" href="{% static '/style/connection.css' %}"> {% endblock %} {% block navigation %}
+<span>
+    </span> {% endblock %} {% block main %}
+<form class="card p-4" id="default_form">
+    <h1 class="h4 mb-4">Vandoxy</h1>
+    <p class="text-center">
+        <span>
+            Achetez et vendez vos produits sur Vandoxy en tout sécurité.  
+            </span>
+    </p>
+    <button class="btn fb mb-4 "> 
+        <a class=" text-white fb text-decoration-none" href="{% url 'social:begin' 'facebook' %}"> Facebook </a>
+    </button>
+    <button class="btn google text-white mb-4">
+        <a class=" text-white text-decoration-none fb" href="{% url 'social:begin' 'google-oauth2' %}"> Gmail </a> </button>
+    <button class="btn e-mail mb-4 " type="button" id="email">Inscription par e-mail </button>
+    <p class="text-center mb-4">
+        <span>
+                Déjà inscript, 
+                <a href="{% url 'signup' %}">Connnectez-vous!</a>
+        </span>
+    </p>
+</form>
+<form class="card p-4 " id="second_form">
+    <p><i class="fas fa-arrow-left"></i></p>
+    <h2 class=" text-primary h6 text-uppercase ">INSCRIVEZ-VOUS:</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <p class="h5 small">NOM:</p>
+            <input class="form-control" placeholder="type your nom">
+        </div>
+        <div class="col-md-6">
+            <p class="h5 small">PRENOM:</p>
+            <input class="form-control" placeholder="type your prénom">
+        </div>
+    </div>
+    <p class="h5 small  mt-3">EMAIL:</p>
+    <input class="form-control" type="email" placeholder="type your email ...">
+    <p class="h5 small  mt-3">PASSWORD:</p>
+    <input class="form-control" type="password" placeholder="type your password">
+    <button class="btn e-mail mb-4 mt-3">Créez maintenant</button>
+</form>
+{% endblock %} {% block javascript %}
+<script src="{% static '/node_modules/bootstrap/js/login.js' %}">
+</script>
+{% endblock %}

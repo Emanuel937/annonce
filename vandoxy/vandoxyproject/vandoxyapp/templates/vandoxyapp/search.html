@@ -1,0 +1,56 @@
+{% extends './base.html' %} {% load static %}
+<!-- css -->
+{% block css %}
+<link rel="stylesheet" href="{% static '/style/search.css' %}">
+<!-- end css -->
+{% endblock %} {% block main %}
+<div id="bar_container">
+    <div class="text-center bar">
+        <h1 class="h2">
+            <span> Vendez  </span> <br>
+            <span>ou</span><br>
+            <span>Achetez  </span>
+        </h1>
+    </div>
+    <article id="search">
+        <p class="text-gray">Pro <input type="radio" name="status"> Amateur: <input type="radio" name="status"></p>
+        <div class="row">
+            <div class="col-md-4">
+                <input type="search" placeholder="quoi">
+            </div>
+            <div class="col-md-4">
+                <select>
+                    <option> outro</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <select>
+                    <option> paris </option>
+                </select>
+            </div>
+        </div>
+        <p class="bg-primary" id="start_search">search</p>
+    </article>
+</div>
+<article class="results container">
+    <h2 class="h5 text-primary">Results: <span class="text-dark small  border-bottom border-info">2000 </span></h2>
+</article>
+<section>
+    {% for x in 'mendes' %}
+    <article class="d-flex container flex-style mb-4">
+        <div>
+            <img src="{% static '/img/images.jpg' %}">
+        </div>
+        <div>
+            <h2 class="h5 p-3 ">Title of the annonce</h2>
+            <div>
+                <p class="text-dark  px-3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis vel tortor in elementum. </p>
+            </div>
+            <div>
+                <p>Aimer</p>
+            </div>
+        </div>
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}
